@@ -1,4 +1,8 @@
+" Turn syntax highlighting on
 syntax on
+
+" Enable type file detection
+filetype on
 
 " Set compatibility to vim only
 set nocompatible
