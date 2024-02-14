@@ -21,3 +21,6 @@ set laststatus=2
 
 " Show command
 set showcmd
+
+" Enable auto completion menu
+set wildmenu
