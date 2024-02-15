@@ -32,4 +32,4 @@ set incsearch
 set hlsearch
 
 " Set hidden characters
-set listchars=tab:←―,space:·,eol:⏎
+set listchars=tab:⇒\\xA0,space:·,eol:⏎
