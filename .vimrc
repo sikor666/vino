@@ -24,3 +24,9 @@ set showcmd
 
 " Enable auto completion menu
 set wildmenu
+
+" While searching though a file incrementally highlight matching characters
+set incsearch
+
+" Use highlighting when doing a search
+set hlsearch
