@@ -30,3 +30,6 @@ set incsearch
 
 " Use highlighting when doing a search
 set hlsearch
+
+" Set hidden characters
+set listchars=tab:←―,space:·,eol:⏎
