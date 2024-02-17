@@ -7,9 +7,6 @@ filetype on
 " Set compatibility to vim only
 set nocompatible
 
-" Automatically wrap text that extends beyond the screen length
-set wrap
-
 " Encoding
 set encoding=utf-8
 
@@ -33,3 +30,32 @@ set hlsearch
 
 " Set hidden characters
 set listchars=tab:⇒\\xA0,space:·,eol:⏎
+set list
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Text, tab and indent related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use spaces instead of tabs
+set expandtab
+
+" Be smart when using tabs ;)
+set smarttab
+
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+
+" Linebreak on 128 characters
+set linebreak
+set textwidth=128
+
+" Set smart auto tab indent
+set autoindent
+set smartindent
+
+" Automatically wrap text that extends beyond the screen length
+set wrap
+
+"map <F2> :bprev<CR>
+"map <F3> :bnext<CR>
+"map <F5> :source ~/.vimrc<CR>
