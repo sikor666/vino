@@ -1,11 +1,11 @@
+" Set compatibility to vim only
+set nocompatible
+
 " Turn syntax highlighting on
 syntax on
 
 " Enable type file detection
 filetype on
-
-" Set compatibility to vim only
-set nocompatible
 
 " Encoding
 set encoding=utf-8
