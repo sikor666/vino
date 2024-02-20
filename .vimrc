@@ -8,7 +8,7 @@ filetype on
 syntax on
 
 " Use the clearest color scheme
-silent! colorscheme retrobox
+silent! colorscheme desert
 set background=dark
 
 " Disable swap file creation
@@ -85,6 +85,30 @@ set wrap
 "set path+=/home/olive/Workspace/git/pirate/app/island/
 "set path+=/home/olive/Workspace/git/pirate/app/ocean/
 "set path+=/home/olive/Workspace/git/pirate/hex/
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Netrw directory listing and file explorer setup
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keep the current directory and the browsing directory synced. This helps you avoid the move files error.
+let g:netrw_keepdir = 0
+
+" Change the size of the Netrw window when it creates a split. I think 10% is fine.
+let g:netrw_winsize = 10
+
+" Hide the banner (if you want). To show it temporarily you can use I inside Netrw.
+let g:netrw_banner = 0
+
+" The tree style will become your default listing style.
+let g:netrw_liststyle= 3
+
+" Hide dotfiles on load.
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
+
+" Change the copy command. Mostly to enable recursive copy of directories.
+let g:netrw_localcopydircmd = 'cp -r'
+
+" Highlight marked files in the same way search matches are.
+hi! link netrwMarkFile Search
 
 " Find in files marked word
 map <f4> :execute "vimgrep /" . expand("<cword>") . "/j **" <bar> cw<cr>
