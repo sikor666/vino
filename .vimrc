@@ -39,7 +39,7 @@ set incsearch
 set hlsearch
 
 " Set hidden characters
-set listchars=tab:⇒\\xA0,space:·,eol:⏎
+set listchars=tab:⇒\ ,space:·,eol:⏎
 
 " Set a list of ignored file and directory patterns
 set wildignore=*/build/*,*.obj,*.bmp,*.png,*.jpg,*.fbx,*.blend,*.exe,*.dylib,*.a,*.mdl,*.bullet,OpenVR,tags
