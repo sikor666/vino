@@ -113,9 +113,11 @@ hi! link netrwMarkFile Search
 " Find in files marked word
 map <f4> :execute "vimgrep /" . expand("<cword>") . "/j **" <bar> cw<cr>
 
+inoremap <c-f> <esc>:vimgrep /\<\>/ **/* \| copen
 inoremap <c-s> <esc>:w<enter>a
 inoremap <c-q> <esc>:quitall<enter>
 
+map <c-f> :vimgrep /\<\>/ **/* \| copen
 map <c-s> :w<enter>
 map <c-q> :quitall<enter>
 
