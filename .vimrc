@@ -92,8 +92,8 @@ set wrap
 " Keep the current directory and the browsing directory synced. This helps you avoid the move files error.
 let g:netrw_keepdir = 0
 
-" Change the size of the Netrw window when it creates a split. I think 10% is fine.
-let g:netrw_winsize = 10
+" Change the size of the Netrw window when it creates a split. I think 20% is fine.
+let g:netrw_winsize = 20
 
 " Hide the banner (if you want). To show it temporarily you can use I inside Netrw.
 let g:netrw_banner = 0
@@ -112,6 +112,10 @@ hi! link netrwMarkFile Search
 
 " Find in files marked word
 map <f4> :execute "vimgrep /" . expand("<cword>") . "/j **" <bar> cw<cr>
+
+" Switch tabs
+map <tab> gt
+map <s-tab> gT
 
 inoremap <c-f> <esc>:vimgrep /\<\>/ **/* \| copen
 inoremap <c-s> <esc>:w<enter>a
