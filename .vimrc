@@ -14,6 +14,9 @@ set background=dark
 " Disable swap file creation
 set noswapfile
 
+" Automatically read file
+set autoread
+
 " Encoding
 set encoding=utf-8
 
